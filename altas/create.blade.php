@@ -2,13 +2,11 @@
 
 @section('content')
 <div class="max-w-3xl mx-auto mt-12 px-6 sm:px-8">
-    {{-- Botón para volver --}}
     <a href="{{ route('jefe.index') }}" 
        class="inline-block mb-8 px-4 py-2 text-indigo-700 border border-indigo-700 rounded-lg hover:bg-indigo-700 hover:text-white transition">
         Volver al inicio
     </a>
 
-    {{-- Formulario de alta --}}
     <form action="{{ route('altas.store') }}" method="POST" class="bg-white p-8 rounded-2xl shadow-md">
         @csrf
 
