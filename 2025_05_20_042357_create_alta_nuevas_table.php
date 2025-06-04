@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('email');
             $table->date('fecha_entrada');
             $table->enum('estado', ['pendiente', 'en proceso', 'terminado', 'cancelado'])->default('pendiente');
-            $table->unsignedBigInteger('jefe_id'); // FK hacia users
+            $table->unsignedBigInteger('jefe_id');
 
             $table->timestamps();
 

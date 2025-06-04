@@ -7,7 +7,6 @@
         <p class="text-gray-500 mt-2">Consulta visual de los equipos registrados y su estado</p>
     </div>
 
-    <!-- Gráficas -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <div class="bg-white p-6 rounded-2xl shadow-md">
             <h3 class="text-lg font-semibold text-indigo-700 mb-4">Equipos por Modelo</h3>
@@ -20,7 +19,6 @@
         </div>
     </div>
 
-    <!-- Búsqueda -->
     <div class="bg-white p-6 rounded-2xl shadow-md mb-12">
         <form method="GET" action="{{ route('rrhh.estadisticas') }}" class="space-y-4">
             <label class="block text-sm font-medium text-gray-700">Buscar equipo</label>
@@ -45,7 +43,6 @@
         </form>
     </div>
 
-    <!-- Resultados -->
     <div class="bg-white p-6 rounded-2xl shadow-md">
         <h3 class="text-lg font-semibold text-indigo-700 mb-4">
             Resultados ({{ $resultados->count() }})
@@ -75,7 +72,6 @@
     </div>
 </div>
 
-<!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>

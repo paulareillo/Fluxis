@@ -10,7 +10,6 @@
     <div id="calendar" class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden"></div>
 </div>
 
-{{-- Estilos personalizados --}}
 <style>
     #calendar {
         width: 100%;
@@ -23,7 +22,7 @@
 
     .fc .fc-button {
         margin: 0 4px !important;
-        border-radius: 0.5rem !important; /* Botones redondeados */
+        border-radius: 0.5rem !important;
         padding: 0.4rem 0.75rem !important;
         font-size: 0.875rem !important;
     }
@@ -37,17 +36,14 @@
         background-color: #4338ca;
     }
 
-    /* Elimina el espacio adicional inferior */
     .fc-view-harness {
         min-height: unset !important;
         overflow: hidden !important;
     }
 </style>
 
-{{-- FullCalendar CSS --}}
 <link href='{{ asset("css/fullcalendar/main.min.css") }}' rel='stylesheet' />
 
-{{-- FullCalendar JS --}}
 <script src='{{ asset("js/fullcalendar/index.global.min.js") }}'></script>
 <script src='{{ asset("js/fullcalendar/es.global.min.js") }}'></script>
 
