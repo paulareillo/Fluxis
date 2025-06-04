@@ -12,7 +12,6 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('altas', function (Blueprint $table) {
-            // Cambiamos el campo departamento a ENUM con los valores permitidos
             $table->enum('departamento', [
                 'RRHH', 
                 'Sistemas', 
