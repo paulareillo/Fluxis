@@ -1,0 +1,53 @@
+.fc {
+  --fc-border-color:#ddd;
+  --fc-button-bg:#fff;
+  --fc-button-border-color:#ddd;
+  --fc-button-hover-bg:#f8f9fa;
+  --fc-button-active-bg:#e2e6ea;
+  --fc-button-disabled-opacity:.3;
+  --fc-daygrid-event-dot-width:8px;
+  --fc-daygrid-event-dot-height:8px;
+  --fc-daygrid-event-dot-border-radius:50%;
+  --fc-daygrid-event-dot-margin-right:6px;
+  --fc-scrollbar-width:15px;
+}
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border:1px solid var(--fc-border-color);
+}
+.fc-button {
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: var(--fc-button-bg);
+  border: 1px solid var(--fc-button-border-color);
+  padding: 0.3em 0.65em;
+  margin: 0 0.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  transition: background-color 0.15s ease-in-out;
+}
+.fc-button:hover:not(:disabled) {
+  background-color: var(--fc-button-hover-bg);
+}
+.fc-button:active:not(:disabled) {
+  background-color: var(--fc-button-active-bg);
+}
+.fc-button:disabled {
+  opacity: var(--fc-button-disabled-opacity);
+  cursor: default;
+}
+.fc-daygrid-event-dot {
+  width: var(--fc-daygrid-event-dot-width);
+  height: var(--fc-daygrid-event-dot-height);
+  border-radius: var(--fc-daygrid-event-dot-border-radius);
+  margin-right: var(--fc-daygrid-event-dot-margin-right);
+  display: inline-block;
+  vertical-align: middle;
+  background-color: currentColor;
+}
+.fc-scrollgrid {
+  overflow: auto;
+  max-height: 600px;
+}
