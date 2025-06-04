@@ -1,7 +1,6 @@
 <nav x-data="{ open: false }" class="bg-white border-b shadow-sm">
     <div class="w-full px-4">
         <div class="flex justify-between h-16 items-center">
-            <!-- Logo (Texto personalizado) -->
             @auth
                 @php
 
@@ -20,7 +19,6 @@
                 </div>
             @endauth
 
-            <!-- User Dropdown -->
             <div class="hidden sm:flex sm:items-center">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
