@@ -10,7 +10,7 @@
                         'Sistemas' => route('sistemas.index'),
                         'Jefe' => route('jefe.index'),
                         'Admin' => route('admin.index'),
-                        default => route('home'), // o tu página de bienvenida
+                        default => route('home'),
                     };
                 @endphp
 
