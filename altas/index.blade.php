@@ -4,7 +4,6 @@
 <div class="max-w-7xl mx-auto mt-10 px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-semibold text-gray-900 text-center mb-8">Mis solicitudes de alta</h2>
 
-    {{-- Formulario de búsqueda --}}
     <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
         <form method="GET" action="{{ route('altas.index') }}" class="flex gap-2 w-full sm:w-auto">
             <input
@@ -25,7 +24,6 @@
         <a href="{{ route('jefe.index') }}" class="px-4 py-2 border border-gray-400 text-gray-700 rounded-md hover:bg-gray-100 transition whitespace-nowrap">Volver al inicio</a>
     </div>
 
-    {{-- Resultados de búsqueda --}}
     @if(!empty($resultados) && $resultados->count())
         <div class="mb-8 max-w-2xl mx-auto">
             <h5 class="text-lg font-semibold mb-3 text-gray-800">Resultados de la búsqueda:</h5>
