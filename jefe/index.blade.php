@@ -8,7 +8,6 @@
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {{-- Crear Alta --}}
         <a href="{{ route('altas.create') }}" 
            class="flex items-center px-6 py-5 bg-white border border-gray-200 rounded-2xl shadow hover:shadow-md hover:bg-indigo-50 transition">
             <svg class="w-6 h-6 text-indigo-600 mr-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -17,7 +16,6 @@
             <span class="text-lg font-medium text-gray-800">Crear Alta</span>
         </a>
 
-        {{-- Ver Altas (con icono de ojo) --}}
         <a href="{{ route('altas.index') }}" 
            class="flex items-center px-6 py-5 bg-white border border-gray-200 rounded-2xl shadow hover:shadow-md hover:bg-indigo-50 transition">
             <svg class="w-6 h-6 text-indigo-600 mr-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -27,7 +25,6 @@
             <span class="text-lg font-medium text-gray-800">Ver Altas</span>
         </a>
 
-        {{-- Calendario --}}
         <a href="{{ route('jefe.calendario') }}" 
            class="flex items-center px-6 py-5 bg-white border border-gray-200 rounded-2xl shadow hover:shadow-md hover:bg-indigo-50 transition">
             <svg class="w-6 h-6 text-indigo-600 mr-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -36,7 +33,6 @@
             <span class="text-lg font-medium text-gray-800">Calendario</span>
         </a>
 
-        {{-- Contacto --}}
         <a href="{{ route('jefe.contacto') }}" 
            class="flex items-center px-6 py-5 bg-white border border-gray-200 rounded-2xl shadow hover:shadow-md hover:bg-indigo-50 transition">
             <svg class="w-6 h-6 text-indigo-600 mr-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
